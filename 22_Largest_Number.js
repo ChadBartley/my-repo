@@ -10,4 +10,4 @@ var largestNumber = function(nums) {
     
 };
 
-console.log(largestNumber([10,2,21]));
+console.log(largestNumber([10,2,21])); // 22110
