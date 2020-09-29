@@ -1,12 +1,12 @@
 // Recursion
-function invertTree(root) {
+function invertTreeRecursive(root) {
     if (root == null) return root;
     [root.left, root.right] = [invertTree(root.right), invertTree(root.left)];
     return root;
   }
   
   // DFS
-  function invertTree(root) {
+  function invertTreeDFS(root) {
     const stack = [root];
   
     while (stack.length) {
@@ -21,7 +21,7 @@ function invertTree(root) {
   }
   
   // BFS
-  function invertTree(root) {
+  function invertTreeBFS(root) {
     const queue = [root];
   
     while (queue.length) {
